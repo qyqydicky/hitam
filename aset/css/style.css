@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Prism&display=swap');
+
+/* font-family: 'Tilt Neon', cursive;
+font-family: 'Tilt Prism', cursive; */
+
+*{
+    font-family: 'Tilt Neon', cursive; 
+}
+
+:root{
+    --bg-navbar: #82e2ef ;
+    --textnavbar: #c833a0 ;
+    --waduh: #4dd163 ;
+    --anu: #ffee31 ;
+    --hoper: #8b63db ;
+}
+/* navbar */
+.navbar{
+    background: var(--bg-navbar);
+}
+.navbar .navbar-brand{
+    color: var(--textnavbar);
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar .navbar-brand span{
+    color: rgb(255, 213, 0);
+}
+a.btn-secon{
+    padding: 12px 24px;
+    background: var(--textnavbar);
+    border-radius: 8px;
+    border: 1px solid var(--waduh);
+}
+a.btn-secon:hover{
+    background: var(--waduh);
+    color: #fff;
+    border: 1px solid var(--waduh);
+    transition: 1s;
+}
+a.btn-first{
+    padding: 12px 24px;
+    background: var(--bg-navbar);
+    border-radius: 8px;
+    border: 1px solid var(--textnavbar);
+}
+a.btn-first:hover{
+    background: var(--textnavbar);
+    color: #fff;
+    transition: 1s;
+}
+.navbar .nav-item i{
+    font-size: 30px ;
+}
+body{
+    min-height: 5000px;
+} 
+.navbar .input-group{
+    width: 50%;
+}
+
+/* atr responsif */
+
+
+@media(max-width:960px){
+    .navbar .input-group{
+       width: 100% ; 
+    }
+}
+/* menu waper */
+.menu-wrapper{
+    margin-top: 120px;
+}
+.menu-wrapper a{
+    margin: 0 20px;
+}
+/* carosel */
+.header{
+    margin-top: 180px;
+}
+/* .header .carousel-inner, .carousel-item img{
+    width: 400px;
+} */
+
+@media(max-width:768px){
+    .header{
+        margin-top: 100px;
+    }
+}
+/* populer jarak */
+.populer{
+    margin-top: 100px;
+}
+
+.populer .title, 
+.price{
+    color: var(--waduh);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* rubah tulisan title */
+@media(max-width:576px){
+    .populer .title,.price{ 
+        font-size: 10px;
+    }
+}
+
+.populer .rating i{
+    font-size: 20px;
+    color: var(--anu);
+}
+.populer .btn-cart{
+    padding: 8px 10px;
+    background-color: var(--waduh);
+    border-radius: 8px;
+    color: azure;
+}
+@media(max-width:576px){
+    .populer .btn-cart{
+        padding: 5px 5px;
+    }
+}
+.populer .btn-cart:hover{
+    background-color: var(--hoper);
+    transition: 1s;
+}
+.populer .btn-cart i{
+    font-size: 25px;
+}
+@media(max-width:576px){
+    .populer .btn-cart i{
+        font-size: 13px;
+    }
